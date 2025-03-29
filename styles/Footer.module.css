@@ -1,0 +1,62 @@
+/* Footer.module.css */
+
+/* Footer Container */
+.footer {
+  background: #f8f8f8;
+  color: #222;
+  padding: 40px 10%;
+  font-family: "Arial", sans-serif;
+}
+
+/* Footer Grid Layout */
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ✅ Ensures four equal columns */
+  gap: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* Footer Columns */
+.footerColumn h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 8px;
+}
+
+.footerColumn ul li a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footerColumn ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footerBottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr; /* ✅ Stack columns in mobile view */
+    text-align: center;
+  }
+}
